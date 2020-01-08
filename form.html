@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple HTML Form</title>
+
+<!-- Thats how we sitle shit -->
+<style type="text/css"> 
+label {
+	font-weight: bold;
+	color: #300ACC;
+}
+</style>
+
+</head>
+<body>
+<!-- Script 2.1  -->
+<form action="handle_form_2_4.php" method="post">
+<fieldset>
+<legend>Enter your information in the form below:</legend>
+<p><label>Neme: <input type="text" name="name" size="20" maxlength="40"></label></p>
+<p><label>Email Adress: <input type="email" name="email" size="40" maxlength="60"></label></p>	
+
+<p><label for="gender">Gender: </label>
+<input type="radio" name="gender" value="M"> Male
+<input type="radio" name="gender" value="F"> Female
+</p>
+
+<p><label>
+	<select name="age">
+		<option value="0-29">Under 30</option>
+		<option value="30-60">Between 30 and 60</option>
+		<option vlaue="61+">Over 60</option>
+
+	</select>
+</label></p>
+
+<p><label>Comments: <textarea name="comments" rows="3" cols="40"></textarea></label></p>
+
+</fieldset>	
+<p align="center"><input type="submit" name="submit" value="Submit my Information"></p>
+
+</form>
+</body>
+</html>
